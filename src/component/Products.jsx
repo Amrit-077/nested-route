@@ -9,7 +9,7 @@ return(
             <div key={product.id} className="product-item">
                 <h3>{product.name}</h3>
                 
-                <img src={'${import.meta.env.Base_URL}${product.image}'}
+                <img src={'${import.meta.env.BASE_URL}${product.image}'}
                 alt={product.price} />
 
                 <Link to={`/productlist/${product.id}`}>View Details</Link>
