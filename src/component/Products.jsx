@@ -8,8 +8,10 @@ return(
         list.map((product) => (
             <div key={product.id} className="product-item">
                 <h3>{product.name}</h3>
-                <img src={product.image} alt={product.name} width={150} />
-                <p>{product.price}</p>
+                
+                <img src={'${import.meta.env.Base_URL}${product.image}'}
+                alt={product.price} />
+
                 <Link to={`/productlist/${product.id}`}>View Details</Link>
             </div>
             
